@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="1049.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #FAFAFC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.ItemMovementFormController">
+   <children>
+      <ImageView fitHeight="485.0" fitWidth="681.0" layoutX="189.0" layoutY="79.0" opacity="0.4">
+         <image>
+            <Image url="@../assets/aa33984b06c751806d95657276f69385.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="419.0" layoutY="574.0" prefHeight="42.0" prefWidth="312.0" style="-fx-border-color: #EDEDF0; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;" />
+      <AnchorPane layoutX="79.0" layoutY="574.0" prefHeight="42.0" prefWidth="312.0" style="-fx-border-color: #EDEDF0; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;" />
+      <ImageView fitHeight="30.0" fitWidth="223.0" layoutX="25.0" layoutY="30.0">
+         <image>
+            <Image url="@../assets/Screenshot%202022-05-31%20130736.jpg" />
+         </image>
+      </ImageView>
+      <BarChart fx:id="barCHartItems" layoutX="25.0" layoutY="87.0" prefHeight="485.0" prefWidth="986.0" stylesheets="@../assets/styelsheets/LineChart.css" title="Item Movement">
+        <xAxis>
+          <CategoryAxis label="Product ID" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Units Sold" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="89.0" layoutY="584.0" text="Most Moving Item:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="429.0" layoutY="584.0" text="Least Moving Item:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMost" layoutX="259.0" layoutY="584.0" textFill="#008614">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLeast" layoutX="599.0" layoutY="584.0" textFill="#7c0303">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

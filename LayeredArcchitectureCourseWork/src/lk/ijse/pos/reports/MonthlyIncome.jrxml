@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MonthlyIncome" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e44de003-d786-414e-9e16-c3c359d2fa1a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Dapter"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[SELECT YEAR(OrderDate), MONTH(OrderDate), SUM(Total) AS Income
+FROM Orders
+GROUP BY YEAR(OrderDate), MONTH(OrderDate)
+ORDER BY YEAR(OrderDate), MONTH(OrderDate)]]>
+	</queryString>
+	<field name="YEAR(OrderDate)" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="YEAR(OrderDate)"/>
+		<property name="com.jaspersoft.studio.field.label" value="YEAR(OrderDate)"/>
+	</field>
+	<field name="MONTH(OrderDate)" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MONTH(OrderDate)"/>
+		<property name="com.jaspersoft.studio.field.label" value="MONTH(OrderDate)"/>
+	</field>
+	<field name="Income" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="Income"/>
+		<property name="com.jaspersoft.studio.field.label" value="Income"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<line>
+				<reportElement x="-3" y="78" width="560" height="1" uuid="95ec1083-91b4-48e8-9917-e892d9a18440">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="-3" y="-2" width="560" height="1" uuid="6d962409-c0d5-4aa6-8065-38c78637c63f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="-20" y="5" width="595" height="33" forecolor="#252B27" uuid="900e718d-e71e-4a14-82fc-02c23b0268f7"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Layered Architecture CourseWork]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-17" y="43" width="595" height="33" forecolor="#313834" uuid="85c3cb47-9f0f-457b-90c6-bfa4c2d02925"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact: 0773276983    Email:derickandrewferdinands@gmail.com
+Address: Colombo.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="30" uuid="d00f85f8-a03a-4c6f-9086-e5e14e2ee89d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96b67fd0-1684-46da-a84d-d4e7d30a03db"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[YEAR(OrderDate)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="0" width="185" height="30" uuid="e57a92d0-fe9e-4420-a538-4403718404d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="df8d0a77-aadd-4593-8577-4799f15c81df"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[MONTH(OrderDate)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="30" uuid="fd9ee1e0-6d48-483c-a178-87c6f0018bf5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aca4c1f6-2c63-41aa-a52b-ecabaed40595"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Income]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="30" uuid="08c201fa-bbca-414b-96d9-aa91e8681eab">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96b67fd0-1684-46da-a84d-d4e7d30a03db"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{YEAR(OrderDate)}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="30" uuid="4265f3ce-b88a-4c01-b421-4e81bd8b3536">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="df8d0a77-aadd-4593-8577-4799f15c81df"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{MONTH(OrderDate)}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="30" uuid="768bf7c1-1c14-4e42-8145-ea5cfc663fe0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aca4c1f6-2c63-41aa-a52b-ecabaed40595"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Income}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="32" splitType="Stretch">
+			<line>
+				<reportElement x="4" y="7" width="560" height="1" uuid="b32be4f0-d750-43d0-b06d-ed35bd7c210e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="4" y="28" width="560" height="1" uuid="818feda2-f7df-48b2-a41f-654afd08d120">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="-10" y="9" width="574" height="17" forecolor="#313834" uuid="73468379-d52f-44a4-95c7-b9b0ecdfd478"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thank You For Visiting LACW SuperMarket]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

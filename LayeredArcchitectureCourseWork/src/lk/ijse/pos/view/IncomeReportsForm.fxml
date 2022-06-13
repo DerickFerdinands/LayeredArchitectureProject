@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="642.0" prefWidth="1049.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #FAFAFC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.IncomeReportsFormController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutX="2.0" layoutY="1.0" prefHeight="636.0" prefWidth="1049.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../assets/styelsheets/AnchorPane.css">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="959.0" prefWidth="1050.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <ImageView fitHeight="531.0" fitWidth="715.0" layoutX="170.0" layoutY="210.0" opacity="0.49">
+                     <image>
+                        <Image url="@../assets/c90d83b8ee4afb65b9510f9c8d7dc434.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="192.0" layoutX="25.0" layoutY="30.0">
+                     <image>
+                        <Image url="@../assets/Screenshot%202022-05-30%20125656.jpg" />
+                     </image>
+                  </ImageView>
+                  <LineChart fx:id="IncomeChart" layoutX="8.0" layoutY="101.0" prefHeight="517.0" prefWidth="1034.0" stylesheets="@../assets/styelsheets/LineChart.css" title="Daily Income Report">
+                    <xAxis>
+                      <CategoryAxis label="Day" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis label="Sales" side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+                  <AnchorPane layoutX="65.0" layoutY="94.0" prefHeight="42.0" prefWidth="187.0" style="-fx-border-color: #EDEDF0; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;">
+                     <children>
+                        <JFXComboBox fx:id="cmbRecordType" focusColor="#405aa800" layoutX="4.0" layoutY="5.0" prefHeight="32.0" prefWidth="179.0" promptText="Report Type" unFocusColor="#4d4d4d00" />
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="btnViewReport" layoutX="771.0" layoutY="904.0" onAction="#ViewAnnualReportOnAction" prefHeight="30.0" prefWidth="238.0" style="-fx-background-color: #704232;" text="View/ Print Report" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <TableView fx:id="tblDailyIncome" layoutX="91.0" layoutY="610.0" prefHeight="287.0" prefWidth="239.0" stylesheets="@../assets/styelsheets/table.css">
+                    <columns>
+                      <TableColumn fx:id="colDate" prefWidth="120.0" text="Date" />
+                        <TableColumn fx:id="colDIncome" prefWidth="115.0" text="Income" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="tblMonthlyIncome" layoutX="374.0" layoutY="610.0" prefHeight="287.0" prefWidth="352.0" stylesheets="@../assets/styelsheets/table.css">
+                     <columns>
+                        <TableColumn fx:id="colMYear" prefWidth="120.0" text="Year" />
+                        <TableColumn fx:id="colMmonth" prefWidth="115.0" text="Month" />
+                        <TableColumn fx:id="colMIncome" prefWidth="115.0" text="Income" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="tblYearlyIncome" layoutX="769.0" layoutY="610.0" prefHeight="287.0" prefWidth="239.0" stylesheets="@../assets/styelsheets/table.css">
+                     <columns>
+                        <TableColumn fx:id="ColYyear" prefWidth="120.0" text="Year" />
+                        <TableColumn fx:id="colYIncome" prefWidth="115.0" text="Income" />
+                     </columns>
+                  </TableView>
+                  <JFXButton fx:id="btnViewReport1" layoutX="373.0" layoutY="904.0" onAction="#ViewMonthlyReportOnAction" prefHeight="30.0" prefWidth="355.0" style="-fx-background-color: #704232;" text="View/ Print Report" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnViewReport11" layoutX="92.0" layoutY="904.0" onAction="#ViewDailyReportOnAction" prefHeight="30.0" prefWidth="239.0" style="-fx-background-color: #704232;" text="View/ Print Report" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

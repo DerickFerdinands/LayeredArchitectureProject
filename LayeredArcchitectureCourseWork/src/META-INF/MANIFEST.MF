@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Main-Class: lk.ijse.pos.AppInitializer
+Class-Path: bcprov-jdk15on-1.64.jar commons-lang3-3.4.jar jfoenix-8.0.10
+ .jar jfreechart-1.0.19.jar jasperreports-6.17.0.jar itext-2.1.7.js8.jar
+  commons-logging-1.1.1.jar jfoenix-8.0.8.jar castor-xml-1.4.1.jar javax
+ .inject-1.jar mysql-connector-java-8.0.22.jar mysql-connector-java-5.1.
+ 49.jar commons-collections-3.2.2.jar jackson-core-2.12.2.jar jackson-da
+ tabind-2.12.2.jar jcommon-1.0.23.jar ecj-3.21.0.jar jackson-annotations
+ -2.12.2.jar commons-collections4-4.2.jar commons-digester-2.1.jar casto
+ r-core-1.4.1.jar TrayTester.jar commons-beanutils-1.9.4.jar AnimateFX-1
+ .2.2.jar javafx-graphics-17-linux.jar javafx-graphics-17-win.jar javafx
+ -base-17.jar javafx-base-17-linux.jar javafx-base-17-win.jar javafx-con
+ trols-17-linux.jar javafx-controls-17-win.jar javafx-graphics-17.jar ja
+ vafx-fxml-17-linux.jar javafx-fxml-17-win.jar javafx-controls-17.jar ja
+ vafx-web-17-linux.jar javafx-web-17-win.jar javafx-media-17.jar javafx-
+ media-17-linux.jar javafx-media-17-win.jar
+

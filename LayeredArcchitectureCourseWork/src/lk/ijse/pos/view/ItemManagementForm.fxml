@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="NavigationContext" prefHeight="642.0" prefWidth="1049.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #FAFAFC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.ItemManagementFormController">
+   <children>
+      <ImageView fitHeight="625.0" fitWidth="869.0" layoutX="177.0" layoutY="9.0" opacity="0.7">
+         <image>
+            <Image url="@../assets/d9509a983a2f9ffc5d6ddbc212843657.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="69.0" layoutX="25.0" layoutY="30.0">
+         <image>
+            <Image url="@../assets/Screenshot%202022-04-29%20144409.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="37.0" layoutY="260.0" prefHeight="42.0" prefWidth="168.0" style="-fx-border-color: #EDEDF0; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <JFXTextField fx:id="txtCode" focusColor="#405aa800" layoutX="9.0" layoutY="5.0" onKeyReleased="#validateFields" prefHeight="32.0" prefWidth="154.0" stylesheets="@../../../../TailerMadeProjects/ITechLankaPOSSystem/ItechLankaPOSSystem/src/Assets/StyleSheets/Text.css" unFocusColor="#4d4d4d07" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="37.0" layoutY="428.0" prefHeight="105.0" prefWidth="362.0" style="-fx-border-color: #EDEDF0; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <JFXTextArea fx:id="txtDescription" focusColor="#405aa809" layoutX="3.0" layoutY="4.0" prefHeight="97.0" prefWidth="352.0" unFocusColor="#4d4d4d00" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="40.0" layoutY="236.0" opacity="0.66" text="Item Code" textFill="#263549">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="407.0" opacity="0.66" text="Description" textFill="#263549">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="181.0" layoutY="61.0" opacity="0.66" text="Item Image" textFill="#263549">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="151.0" layoutY="83.0" onMouseClicked="#setImageOnAction" prefHeight="138.0" prefWidth="135.0" style="-fx-border-color: #EDEDF0; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <HBox alignment="CENTER" layoutX="6.0" layoutY="3.0" prefHeight="130.0" prefWidth="124.0">
+               <children>
+                  <ImageView fx:id="imgItemImage" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/add_photo_alternate_FILL0_wght400_GRAD0_opsz48.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="37.0" layoutY="342.0" prefHeight="42.0" prefWidth="168.0" style="-fx-border-color: #EDEDF0; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <JFXTextField fx:id="txtUnitPrice" focusColor="#405aa800" layoutX="11.0" layoutY="4.0" onKeyReleased="#validateFields" prefHeight="32.0" prefWidth="146.0" stylesheets="@../../../../TailerMadeProjects/ITechLankaPOSSystem/ItechLankaPOSSystem/src/Assets/StyleSheets/Text.css" unFocusColor="#4d4d4d07" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="40.0" layoutY="321.0" opacity="0.66" text="Unit Price" textFill="#263549">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="236.0" opacity="0.66" text="Pack Size" textFill="#263549">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="227.0" layoutY="342.0" prefHeight="42.0" prefWidth="168.0" style="-fx-border-color: #EDEDF0; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <JFXTextField fx:id="txtQtyOnHand" focusColor="#405aa800" layoutX="11.0" layoutY="5.0" onKeyReleased="#validateFields" prefHeight="32.0" prefWidth="146.0" stylesheets="@../../../../TailerMadeProjects/ITechLankaPOSSystem/ItechLankaPOSSystem/src/Assets/StyleSheets/Text.css" unFocusColor="#4d4d4d07" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="230.0" layoutY="321.0" opacity="0.66" text="Qty On Hand" textFill="#263549">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="227.0" layoutY="260.0" prefHeight="42.0" prefWidth="168.0" style="-fx-border-color: #EDEDF0; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <JFXTextField fx:id="txtPackSize" focusColor="#405aa800" layoutX="10.0" layoutY="4.0" onKeyReleased="#validateFields" prefHeight="32.0" prefWidth="154.0" stylesheets="@../../../../TailerMadeProjects/ITechLankaPOSSystem/ItechLankaPOSSystem/src/Assets/StyleSheets/Text.css" unFocusColor="#4d4d4d07" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnAddItem" layoutX="41.0" layoutY="570.0" onAction="#addItemOnAction" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: #003171;" text="Add Item" textFill="#cdd9e1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="228.0" layoutY="570.0" onAction="#clearFieldsOnAction" prefHeight="39.0" prefWidth="168.0" style="-fx-background-color: #E6EFFC;" text="Cancel" textFill="#69737d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblItems" layoutX="424.0" layoutY="115.0" opacity="0.66" prefHeight="495.0" prefWidth="609.0" stylesheets="@../assets/styelsheets/table.css">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="91.0" text="Code" />
+            <TableColumn fx:id="colDescription" prefWidth="121.0" text="Description" />
+            <TableColumn fx:id="colPackSize" prefWidth="109.0" text="Pack Size" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="92.0" text="Unit Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="111.0" text="Qty On Hand" />
+            <TableColumn fx:id="colOption" prefWidth="84.0" text="---" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="424.0" layoutY="36.0" prefHeight="52.0" prefWidth="373.0" style="-fx-border-color: #58D5E6; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <JFXTextField fx:id="txtSearch" focusColor="#405aa800" layoutX="53.0" layoutY="7.0" onKeyReleased="#searchMatchingItems" prefHeight="39.0" prefWidth="549.0" promptText="Type To Search Items..." unFocusColor="#4d4d4d07">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="12.0" layoutY="10.0">
+               <image>
+                  <Image url="@../assets/image%20(36).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact name="LayeredArcchitectureCourseWork:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LayeredArcchitectureCourseWork_jar</output-path>
+    <root id="root">
+      <element id="archive" name="LayeredArcchitectureCourseWork.jar">
+        <element id="module-output" name="LayeredArcchitectureCourseWork" />
+      </element>
+      <element id="library" level="project" name="bcprov-jdk15on-1.64" />
+      <element id="library" level="project" name="io.github.typhon0:AnimateFX:1.2.2" />
+    </root>
+  </artifact>
+</component>

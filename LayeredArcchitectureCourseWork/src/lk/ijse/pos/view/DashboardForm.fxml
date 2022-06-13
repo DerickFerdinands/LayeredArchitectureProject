@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainContext" prefHeight="741.0" prefWidth="1229.0" style="-fx-background-color: #FAFAFC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.DashboardFormController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="12.0" prefHeight="717.0" prefWidth="124.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #FAFAFC; -fx-background-radius: 15; -fx-border-radius: 15;">
+         <children>
+            <JFXButton fx:id="btnHome" alignment="CENTER" contentDisplay="TOP" layoutX="23.0" layoutY="192.0" onAction="#goToHomeOnAction" onMouseClicked="#changeButtonUI" onMouseEntered="#MaximizeButtons" onMouseExited="#ResetButtons" prefHeight="70.0" prefWidth="77.0" style="-fx-background-color: #704232;" text="Home" textFill="#fffefe">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@../assets/home_FILL0_wght400_GRAD0_opsz48.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="11.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="62.0" fitWidth="77.0" layoutX="25.0" layoutY="33.0" opacity="0.88">
+               <image>
+                  <Image url="@../assets/Screenshot%202022-05-17%20172229.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnCustomer" alignment="CENTER" contentDisplay="TOP" layoutX="25.0" layoutY="279.0" onAction="#goToCustomerManagementOnAction" onMouseClicked="#changeButtonUI" onMouseEntered="#MaximizeButtons" onMouseExited="#ResetButtons" prefHeight="70.0" prefWidth="77.0" style="-fx-background-radius: 15;" text="Clients" textFill="#5b5353">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@../assets/person_FILL0_wght400_GRAD0_opsz48.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="11.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnPlaceOrder" alignment="CENTER" contentDisplay="TOP" layoutX="25.0" layoutY="367.0" onAction="#goToPlaceOrderFormOnAction" onMouseClicked="#changeButtonUI" onMouseEntered="#MaximizeButtons" onMouseExited="#ResetButtons" prefHeight="70.0" prefWidth="77.0" style="-fx-background-radius: 15;" text="Order" textFill="#5b5353">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@../assets/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnManageOrders" alignment="CENTER" contentDisplay="TOP" layoutX="25.0" layoutY="455.0" onAction="#goToManageOrdersOnAction" onMouseClicked="#changeButtonUI" onMouseEntered="#MaximizeButtons" onMouseExited="#ResetButtons" prefHeight="70.0" prefWidth="77.0" style="-fx-background-radius: 15;" text="Manage " textAlignment="CENTER" textFill="#5b5353" textOverrun="CLIP">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@../assets/production_quantity_limits_FILL0_wght400_GRAD0_opsz48.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="11.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnLogout" alignment="CENTER" contentDisplay="TOP" layoutX="31.0" layoutY="648.0" onAction="#logOutOnAction" prefHeight="45.0" prefWidth="63.0" style="-fx-background-radius: 10;" text="Logout" textFill="#5b5353">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="21.0">
+                     <image>
+                        <Image url="@../assets/logout_FILL0_wght400_GRAD0_opsz48.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="11.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="463.0" layoutY="22.0" prefHeight="29.0" prefWidth="421.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-color: #FAFAFC; -fx-border-radius: 10;">
+         <children>
+            <JFXTextField editable="false" focusColor="#405aa800" layoutX="19.0" layoutY="2.0" prefHeight="36.0" prefWidth="349.0" promptText="Search Item Name Or Code..." unFocusColor="#4d4d4d00" />
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="378.0" layoutY="6.0" opacity="0.83">
+               <image>
+                  <Image url="@../assets/search_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.08" contrast="-0.76" hue="-0.38" saturation="-0.17" />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="169.0" layoutY="24.0" prefHeight="36.0" prefWidth="217.0" text="Layered Architecture" textFill="#704232">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="938.0" layoutY="19.0" onMouseClicked="#ShowSwitchPrivilegePane" onMouseEntered="#ShowSwitchPrivilegePane" prefHeight="40.0" prefWidth="272.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5; -fx-border-color: #FAFAFC; -fx-border-radius: 5;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="10.0" layoutY="2.0">
+               <image>
+                  <Image url="@../assets/34af996ddff444391edab94abcf3c7f3.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="67.0" layoutY="10.0" text="Iḿ an User" textFill="#575757">
+               <font>
+                  <Font name="Arial" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="22.0" text="User Options" textFill="#4a4747">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="237.0" layoutY="9.0" onMouseClicked="#ShowSwitchPrivilegePane">
+               <image>
+                  <Image url="@../assets/arrow_drop_down_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="navigationPane" layoutX="162.0" layoutY="83.0" prefHeight="642.0" prefWidth="1049.0" />
+      <AnchorPane fx:id="SwitchPrivilegePane" layoutX="944.0" layoutY="72.0" onMouseExited="#HidePrivilegePane" prefHeight="62.0" prefWidth="266.0" style="-fx-background-color: White;" visible="false">
+         <children>
+            <JFXButton fx:id="btnSwtichPrivilege" layoutX="14.0" layoutY="14.0" onAction="#switchOptionsOnAction" prefHeight="34.0" prefWidth="233.0" style="-fx-background-color: #003171;" text="Switch To Admin Privileges" textFill="#e1dbdb">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0">
+                     <image>
+                        <Image url="@../assets/admin_panel_settings_FILL0_wght400_GRAD0_opsz48.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

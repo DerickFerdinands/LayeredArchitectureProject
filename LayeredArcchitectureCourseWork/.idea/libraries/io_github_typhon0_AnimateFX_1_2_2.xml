@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="io.github.typhon0:AnimateFX:1.2.2" type="repository">
+    <properties maven-id="io.github.typhon0:AnimateFX:1.2.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/github/typhon0/AnimateFX/1.2.2/AnimateFX-1.2.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17/javafx-graphics-17-linux.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17/javafx-graphics-17-win.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17/javafx-base-17.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17/javafx-base-17-linux.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17/javafx-base-17-win.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17/javafx-controls-17-linux.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17/javafx-controls-17-win.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17/javafx-graphics-17.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/17/javafx-fxml-17-linux.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/17/javafx-fxml-17-win.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17/javafx-controls-17.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-web/17/javafx-web-17-linux.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-web/17/javafx-web-17-win.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/17/javafx-media-17.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/17/javafx-media-17-linux.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/17/javafx-media-17-win.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

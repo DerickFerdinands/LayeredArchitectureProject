@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="642.0" prefWidth="1049.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #FAFAFC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.AdminHomeFormControllerController">
+   <children>
+      <ImageView fitHeight="591.0" fitWidth="753.0" layoutX="287.0" layoutY="41.0" opacity="0.5">
+         <image>
+            <Image url="@../assets/a7628d0e415c8b86e38066abee9f4f29.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="79.0" layoutX="25.0" layoutY="30.0">
+         <image>
+            <Image url="@../assets/Screenshot%202022-05-31%20203853.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="38.0" layoutY="101.0" prefHeight="192.0" prefWidth="427.0" style="-fx-background-color: #ECFBFD; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="lblRevenue" layoutX="163.0" layoutY="95.0" prefHeight="28.0" prefWidth="165.0" text="Rs.500,000/=">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="163.0" layoutY="64.0" text="Revenue To Date">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="111.0" fitWidth="110.0" layoutX="26.0" layoutY="29.0">
+               <image>
+                  <Image url="@../assets/output-onlinepngtools%20(2).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="613.0" layoutY="407.0" opacity="0.84" prefHeight="122.0" prefWidth="402.0" style="-fx-background-color: #704232; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="lblDayName" layoutX="34.0" layoutY="29.0" prefHeight="31.0" prefWidth="176.0" text="SUNDAY" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="34.0" layoutY="59.0" prefHeight="31.0" prefWidth="145.0" text="06/02/2022" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="204.0" layoutY="35.0" prefHeight="45.0" prefWidth="165.0" text="07:37:10" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="38.0" layoutY="553.0" opacity="0.84" prefHeight="65.0" prefWidth="977.0" style="-fx-background-color: #704232; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="32.0" layoutY="17.0" prefHeight="31.0" prefWidth="224.0" text="Total Number Of Items:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="452.0" layoutY="17.0" prefHeight="31.0" prefWidth="271.0" text="Total Number Of Customers:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalNoItems" layoutX="262.0" layoutY="17.0" prefHeight="31.0" prefWidth="131.0" text="00.00" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalNoCustomers" layoutX="722.0" layoutY="17.0" prefHeight="31.0" prefWidth="131.0" text="00.00" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
